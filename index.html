@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2b1d16" />
+  <meta name="description" content="Hotel Sauce — habitaciones cómodas, modernas y listas para tu próxima estadía." />
+  <title>Hotel Sauce | Descansa bien</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Hotel Sauce">
+      <span class="brand-mark">S</span>
+      <span class="brand-text">
+        <strong>HOTEL SAUCE</strong>
+        <small>Descanso con estilo</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#galeria">Galería</a>
+      <a href="#experiencia">Experiencia</a>
+      <button class="btn btn-small btn-whatsapp" data-message="Hola, quiero consultar por una habitación en Hotel Sauce.">
+        Reservar por WhatsApp
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media">
+        <img src="assets/habitacion-matrimonial-3.webp" alt="Habitación matrimonial de Hotel Sauce" class="hero-img active">
+        <img src="assets/habitacion-doble-2.webp" alt="Habitación doble de Hotel Sauce" class="hero-img">
+        <img src="assets/habitacion-matrimonial-2.webp" alt="Habitación de Hotel Sauce" class="hero-img">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">HOTEL SAUCE</p>
+        <h1>Tu descanso, en un espacio que se siente bien.</h1>
+        <p class="hero-copy">
+          Habitaciones cálidas, modernas y funcionales para disfrutar una estadía cómoda.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-whatsapp" data-message="Hola, quiero consultar por una habitación en Hotel Sauce.">
+            Consultar disponibilidad
+          </button>
+          <a class="btn btn-ghost" href="#galeria">Ver habitaciones</a>
+        </div>
+        <div class="hero-meta">
+          <span>Ambientes modernos</span>
+          <span>Habitaciones equipadas</span>
+          <span>Atención por WhatsApp</span>
+        </div>
+      </div>
+
+      <div class="hero-dots" aria-label="Cambiar imagen principal">
+        <button class="dot active" data-slide="0" aria-label="Imagen 1"></button>
+        <button class="dot" data-slide="1" aria-label="Imagen 2"></button>
+        <button class="dot" data-slide="2" aria-label="Imagen 3"></button>
+      </div>
+    </section>
+
+    <section class="section intro" id="experiencia">
+      <div>
+        <p class="eyebrow dark">UNA ESTADÍA AGRADABLE</p>
+        <h2>Diseño cálido, descanso simple.</h2>
+      </div>
+      <p>
+        Hotel Sauce combina tonos cálidos, madera, iluminación suave y espacios funcionales.
+        La página está pensada para que tus huéspedes puedan conocer las habitaciones y contactarte rápidamente.
+      </p>
+    </section>
+
+    <section class="section rooms" id="habitaciones">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">HABITACIONES</p>
+          <h2>Elige el espacio ideal para tu estadía</h2>
+        </div>
+        <p>Consulta disponibilidad y tarifa directamente por WhatsApp.</p>
+      </div>
+
+      <div class="room-grid">
+        <article class="room-card">
+          <div class="room-image-wrap">
+            <img src="assets/habitacion-matrimonial-3.webp" alt="Habitación matrimonial" loading="lazy">
+            <span class="room-tag">Matrimonial</span>
+          </div>
+          <div class="room-body">
+            <h3>Habitación Matrimonial</h3>
+            <p>Una propuesta cálida y cómoda, ideal para descansar en pareja.</p>
+            <div class="room-features">
+              <span>Cama matrimonial</span>
+              <span>TV</span>
+              <span>Ambiente moderno</span>
+            </div>
+            <button class="text-link btn-whatsapp" data-message="Hola, quiero consultar por una habitación en Hotel Sauce.">
+              Consultar esta habitación →
+            </button>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <div class="room-image-wrap">
+            <img src="assets/habitacion-doble-2.webp" alt="Habitación con dos camas" loading="lazy">
+            <span class="room-tag">Doble / Familiar</span>
+          </div>
+          <div class="room-body">
+            <h3>Habitación Doble</h3>
+            <p>Más espacio para compartir, con distribución práctica y agradable.</p>
+            <div class="room-features">
+              <span>Dos camas</span>
+              <span>Iluminación cálida</span>
+              <span>Espacio funcional</span>
+            </div>
+            <button class="text-link btn-whatsapp" data-message="Hola, quiero consultar por una habitación en Hotel Sauce.">
+              Consultar esta habitación →
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">GALERÍA</p>
+          <h2>Conoce Hotel Sauce</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar galería">
+          <button class="filter active" data-filter="all">Todo</button>
+          <button class="filter" data-filter="room">Habitaciones</button>
+          <button class="filter" data-filter="bath">Baños</button>
+          <button class="filter" data-filter="space">Ambientes</button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <button class="gallery-item tall" data-category="room" data-full="assets/habitacion-matrimonial-1.webp">
+          <img src="assets/habitacion-matrimonial-1.webp" alt="Habitación Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item wide" data-category="room" data-full="assets/habitacion-matrimonial-2.webp">
+          <img src="assets/habitacion-matrimonial-2.webp" alt="Habitación Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item" data-category="bath" data-full="assets/bano-1.webp">
+          <img src="assets/bano-1.webp" alt="Baño Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item tall" data-category="bath" data-full="assets/ducha.webp">
+          <img src="assets/ducha.webp" alt="Ducha Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item wide" data-category="room" data-full="assets/habitacion-doble-1.webp">
+          <img src="assets/habitacion-doble-1.webp" alt="Habitación doble Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item tall" data-category="space" data-full="assets/pasillo.webp">
+          <img src="assets/pasillo.webp" alt="Pasillo Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item wide" data-category="room" data-full="assets/habitacion-doble-2.webp">
+          <img src="assets/habitacion-doble-2.webp" alt="Habitación de Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item" data-category="bath" data-full="assets/bano-2.webp">
+          <img src="assets/bano-2.webp" alt="Baño moderno Hotel Sauce" loading="lazy">
+        </button>
+        <button class="gallery-item wide" data-category="room" data-full="assets/habitacion-matrimonial-3.webp">
+          <img src="assets/habitacion-matrimonial-3.webp" alt="Habitación matrimonial Hotel Sauce" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <section class="section visual-strip">
+      <div class="visual-copy">
+        <p class="eyebrow">HOTEL SAUCE</p>
+        <h2>¿Listo para reservar?</h2>
+        <p>Escríbenos por WhatsApp y consulta disponibilidad, tarifas y el tipo de habitación que necesitas.</p>
+        <button class="btn btn-light btn-whatsapp" data-message="Hola, quiero consultar por una habitación en Hotel Sauce.">
+          Hablar por WhatsApp
+        </button>
+      </div>
+      <img src="assets/habitacion-matrimonial-2.webp" alt="Habitación Hotel Sauce" loading="lazy">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>HOTEL SAUCE</strong>
+      <p>Comodidad, calidez y atención directa.</p>
+    </div>
+    <div>
+      <span>Redes: @sauce.hotel</span>
+      <span class="footer-note">© <span id="year"></span> Hotel Sauce</span>
+    </div>
+  </footer>
+
+  <a class="floating-wa btn-whatsapp" href="#" aria-label="Contactar por WhatsApp" data-message="Hola, quiero consultar por una habitación en Hotel Sauce.">
+    <span>WhatsApp</span>
+  </a>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Cerrar">×</button>
+    <img src="" alt="Vista ampliada">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
